@@ -6,14 +6,11 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { Context } from "../index";
 
 const AppRouter = () => {
-  const {auth}=useContext(Context)
+  const { auth } = useContext(Context);
   const [user] = useAuthState(auth);
-  console.log(user);
-
-  // const { auth } = useContext(Context);
-  // const [user] = useAuthState(auth);
+  // console.log("auth: ", auth);
+  // console.log(user);
   // console.log(CHAT_ROUTE,LOGIN_ROUTE,privateRoutes,publicRoutes);
-
   return user ? (
     <Switch>
       {privateRoutes.map(({ path, Component }) => (

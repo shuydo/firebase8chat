@@ -1,7 +1,5 @@
 import React from 'react';
 import {Container, Grid} from "@material-ui/core";
-// import {Button, Container, Grid} from "@material-ui/core";
-// import Box from "@material-ui/core/Box";
 
 const Loader = () => {
     return (

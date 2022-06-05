@@ -1,11 +1,16 @@
 import React, { useContext } from "react";
 import { Button, Container, Grid } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
+// import { useFirebaseApp } from "@use-firebase/app";
+
 import { Context } from "../index";
 import firebase from "firebase";
 
 const Login = () => {
   const { auth } = useContext(Context);
+
+  // const app = useFirebaseApp(); // new
+  // console.log("app: ", app);
 
   const login = async () => {
     const provider = new firebase.auth.GoogleAuthProvider();
